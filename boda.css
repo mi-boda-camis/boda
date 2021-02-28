@@ -1,23 +1,62 @@
-#content {
-  text-align: center;
-  padding-top: 25%;
-  color: white;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
-  padding-bottom: 25%;
+@font-face {
+  font-family: jalitta;
+  src: url(jalitta.ttf);
 }
 
+
+@font-face {
+  font-family: albert;
+  src: url(Albertsthal\ Typewriter.ttf);
+}
+
+#container-inicial{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin: auto;
+}
+
+#content {
+  font-family: jalitta;
+  color: #460405;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+#content h2{
+  font-size: 50px;
+}
+
+
 body {
-    background-color: #FAFAFA;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.jalitta {
+  font-family: jalitta;
+  color: #460405;
+  margin-bottom: 30px;
+}
+
+.albert {
+  font-family: albert;
+  color: #460405;
 }
 
 #countdown {
+  font-family: albert;
   text-align: center;
   padding-top: 50px;
-  color: gray;
+  color: #460405;
   padding-bottom: 50px;
   /* text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 18px 23px rgba(0, 0, 0, 0.1); */
+}
+
+#countdown h2{
+  
 }
 
 #celebration {
@@ -43,8 +82,7 @@ body {
   #gifts {
     text-align: center;
     padding-top: 50px;
-    color: white;
-    background-color: #677B8C;
+    color: #460405;
     padding-bottom: 50px;
     /* text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
       0px 18px 23px rgba(0, 0, 0, 0.1); */
@@ -79,12 +117,13 @@ body {
 
 hr {
     width: 80%;
+    color: #460405;
 }
 
 #body {
-  background: url(banner2.jpeg);
-  background-size: cover;
-  background-position: center;
+  /* background: url(BannerMatri.png); */
+  /* background-size: auto;
+  background-position: center; */
   font-family: Lato, sans-serif;
 }
 
@@ -101,4 +140,8 @@ hr {
   width: 400px;
   border-top: 1px solid #f8f8f8;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.mirror {
+  transform: scaleX(-1);
 }
