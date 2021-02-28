@@ -10,16 +10,22 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="boda.css" />
   </head>
   <body>
     <div id="body">
       <div id="container-inicial" class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 ">
             <div id="content">
               <div id="content-text">
-                <img width="100%" height="100%" src="BannerMatri.png" alt="">
+                <div class="d-none d-lg-block">
+                  <img width="100%" height="100%" src="BannerMatri.png" alt="">
+                </div>
+                <div class="d-block d-lg-none">
+                  <img width="100%"" src="BannerMatri.png" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -57,7 +63,12 @@
       <p style="margin-bottom: 30px;">Ubicada en Santa Marta, Colombia</p>
       <iframe id="map-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15661.465757676302!2d-74.2172775!3d11.0860434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x501d82690706904e!2sCapilla%20Los%20Alcatraces!5e0!3m2!1ses-419!2sco!4v1613872676238!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <div class="spacer"></div>
-      <img width="20%" height="30%" src="Separador1.jpg" alt="">
+      <div class="d-none d-lg-block">
+        <img width="20%" height="30%" src="Separador1.jpg" alt="">
+      </div>
+      <div class="d-block d-lg-none">
+        <img width="100%" src="Separador1.jpg" alt="">
+      </div>
       <h2 class="albert">Hotel Santorini Casablanca</h2>
       <p style="margin-bottom: 30px;">Ubicado en Santa Marta, Colombia</p>
       <iframe
@@ -73,7 +84,12 @@
     <div id="us">
       <h1 class="jalitta">Lo que puedes vestir</h1>
       <div class="row">
-        <img src="Dresscode.jpg" width="40%" height="80%">
+        <div class="d-none d-lg-block">
+          <img src="Dresscode.jpg" width="40%" height="80%">
+        </div>
+        <div class="d-block d-lg-none">
+          <img src="Dresscode.jpg" width="100%">
+        </div>
       </div>    
     </div>
 
@@ -98,7 +114,7 @@
         <div class="con">
             <div class="row">
                 <div class="col-lg-1"></div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 pb-5 pb-lg-0">
                     <h1 class="jalitta">Canciones que no pueden faltar</h1>
                     <p class="albert">Ayúdanos agregando canciones ideales para este día tan especial</p>
                     <button onclick="window.location.href='https://open.spotify.com/embed/playlist/5pRI5HqDgN7MvBC7ZnoWGs'" type="button" class="btn btn-light albert" style="background-color: #677B8C; color: white;"> <p target="_blank" href="https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO?si=k36qzeItR-2iIkDAj5YkSg">Agregar canciones</p> </button>
@@ -140,6 +156,7 @@
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script>
       // Set the date we're counting down to
       var countDownDate = new Date("Sep 3, 2021 17:00:00").getTime();
